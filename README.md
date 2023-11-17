@@ -2,6 +2,7 @@
 
 
 This is small Instagram  web application consists of a frontend and a backend.This web application is full responsive on all the Devices such as Large, Medium and Small Screens Below are instructions on how to run each part of the application.
+It also Uses the popular and Centralized state management library called as React-Redux with redux-thunk as Middleware
 
 ## Backend
 

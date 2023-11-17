@@ -4,7 +4,7 @@
     justify-content: space-around;
     flex-direction: column;
     padding: 20px;
-    background-color: #f0f0f0; /* Set your desired background color */
+    background-color: #f0f0f0; 
    
     margin: auto;
     
@@ -21,7 +21,7 @@
     overflow: hidden;
   }
   
-  /* Additional styles for the "Comments" button */
+ 
   .posts Button {
     margin-top: 10px;
     padding: 8px 15px;
@@ -30,11 +30,11 @@
     cursor: pointer;
     color: #fff;
     font-size: 14px;
-    background-color: #65a7f3; /* Set your desired background color */
+    background-color: #65a7f3; 
   }
 
 
-  /* Add these styles to your CSS file or include them in your existing stylesheet */
+ 
 
 .add-form {
   max-width: 600px;
@@ -88,7 +88,7 @@
 }
 
   
-  /* Media Queries for Responsive Design */
+  
   @media (max-width: 768px) {
     .container {
       flex-direction: column;
