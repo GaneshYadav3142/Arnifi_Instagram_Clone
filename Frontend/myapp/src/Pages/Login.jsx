@@ -26,7 +26,7 @@ export const Login = () => {
                     localStorage.setItem("name",name)
                     localStorage.setItem("isAuth",true)
                     alert("Login Successful")
-                    navigate("/dashboard")
+                    navigate("/postpage")
                    }
                    else{
                     alert("Invalid Credentials")

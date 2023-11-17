@@ -1,28 +1,61 @@
 {
-  "posts":[
+  "posts": [
     {
       "id": 1,
       "userId": 1,
-      "image":"https://www.jsonplaceholder.org/jsonplaceholder.webp",
+      "name": "Ganesh Yadav",
+      "image": "https://e0.pxfuel.com/wallpapers/692/714/desktop-wallpaper-beautiful-nature-latest-beauty-nature.jpg",
       "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit"
-      }
-  ],
-
-"users":[
-  {
-    "id":1,
-    "name":"Ganesh Yadav",
-    "email":"ganesh@123",
-    "password":"1234"
-  }
-],
-"comments":[
-  {
-    "postId": 1,
-    "id": 1,
-    "name": "Ganesh Yadav",
-    "email": "ganesh@123",
-    "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "name": "Chetan Chauhan",
+      "image": "https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-4.0.3",
+      "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit"
+    },
+    {
+      "name": "Ganesh Yadav",
+      "image": "https://placehold.co/600x400",
+      "title": "Just a pic",
+      "id": 3
     }
-]
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Ganesh Yadav",
+      "email": "ganesh@123",
+      "password": "1234"
+    },
+    {
+      "id": 2,
+      "name": "Chetan Chauhan",
+      "email": "chetan@123",
+      "password": "1234"
+    }
+  ],
+  "comments": [
+    {
+      "postId": 1,
+      "id": 1,
+      "name": "Ganesh Yadav",
+      "email": "ganesh@123",
+      "body": " quasi\nreiciendis et nam sapiente accusantium"
+    },
+    {
+      "postId": 1,
+      "id": 2,
+      "name": "Chetan Chauhan",
+      "email": "chetan@123",
+      "body": "Nice scene"
+    },
+    {
+      "postId": 3,
+      "id": 2,
+      "name": "Chetan Chauhan",
+      "email": "chetan@123",
+      "body": "Beautiful"
+    }
+  ]
 }
