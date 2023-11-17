@@ -51,6 +51,10 @@
   .button.like {
     background-color: #3897f0;
   }
+
+  .button.liked {
+    background-color: tomato;
+  }
   
   .button.share {
     background-color: #65a7f3;

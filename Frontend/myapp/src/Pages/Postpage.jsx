@@ -5,16 +5,19 @@ import { getPost, postImage } from '../Redux/postReducer/action'
 import { Postcard } from '../Components/Postcard'
 import { Button } from '@chakra-ui/react'
 import "../Styles/Postpage.css"
-import { getComment } from '../Redux/commentReducer/action'
+import { getComment, postCommentFunction } from '../Redux/commentReducer/action'
 export const Postpage = () => {
 
    const postData=useSelector((store)=>store.postReducer.posts)
    const postComment=useSelector((store)=>store.commentReducer.comments)
    const [toggleform,setToggleForm]=useState(false)
    const [togglecomment, setToggleComment]=useState({})
+   const [toggleAddComment ,setToggleAddComment]=useState(false)
+   const [comment,setComment]=useState("")
    const [imageurl,setImageURL]=useState("")
    const [title,setTile]=useState("")
    const name=localStorage.getItem("name")
+   const email=localStorage.getItem("email")
    console.log(postData)
    const dispatch=useDispatch()
 
@@ -30,10 +33,21 @@ export const Postpage = () => {
     dispatch(getComment(id))
    }
 
+   const handelToggleAddComment=()=>{
+    setToggleAddComment(!toggleAddComment)
+   }
+
    const handelSubmit=(e)=>{
     e.preventDefault()
      dispatch(postImage({name,image:imageurl,title}))
     setToggleForm(false)
+  }
+
+  const handelSubmitComment=(id)=>{
+    console.log("Yes")
+    dispatch(postCommentFunction({postId:id,name:name,email:email,body:comment}))
+    setComment("")
+  
   }
 
    useEffect(()=>{
@@ -44,7 +58,7 @@ export const Postpage = () => {
   return (
     <div className='container'>
       <div className='add-post'>
-        <Button onClick={handelToggle}>Add Post</Button>
+        <Button colorScheme="whatsapp" onClick={handelToggle}>Hey! {name} Add Post</Button>
         {
           toggleform && (<div className='add-form'>
             <form onSubmit={handelSubmit}>
@@ -67,8 +81,16 @@ export const Postpage = () => {
           <div className='posts' key={el.id}>
           <Postcard {...el}/>
           <Button  onClick={()=>handelToggleComment(el.id)}>Comments</Button>
-          {togglecomment[el.id] && postComment.length!==0 && <div key={el.id}> {
+          {togglecomment[el.id] && <div key={el.id}> {
            postComment.map((comment)=>(<li key={comment.id}>{comment.body}---{comment.name}</li>))
+           }
+           <Button onClick={handelToggleAddComment}>Add Comments</Button>
+           {
+            toggleAddComment && (<div className='comment-form'>
+               <input type="text" value={comment} id="comment" placeholder='Enter Comment' required onChange={(e)=>setComment(e.target.value)}/>
+               <button onClick={()=>handelSubmitComment(el.id)}>Submit</button>
+              
+            </div>)
            }
            </div>}
           </div>

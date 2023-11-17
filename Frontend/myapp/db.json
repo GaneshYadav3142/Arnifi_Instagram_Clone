@@ -16,9 +16,15 @@
     },
     {
       "name": "Ganesh Yadav",
-      "image": "https://placehold.co/600x400",
+      "image": "https://cdn.pixabay.com/photo/2015/04/19/08/32/rose-729509_1280.jpg",
       "title": "Just a pic",
       "id": 3
+    },
+    {
+      "name": "Sumitra Yadav",
+      "image": "https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "title": "Humming Bird",
+      "id": 4
     }
   ],
   "users": [
@@ -33,6 +39,12 @@
       "name": "Chetan Chauhan",
       "email": "chetan@123",
       "password": "1234"
+    },
+    {
+      "name": "Sumitra Yadav",
+      "email": "sumitra@123",
+      "password": "1234",
+      "id": 3
     }
   ],
   "comments": [
@@ -56,6 +68,41 @@
       "name": "Chetan Chauhan",
       "email": "chetan@123",
       "body": "Beautiful"
+    },
+    {
+      "postId": 1,
+      "name": "Ganesh Yadav",
+      "email": "ganesh@123",
+      "body": "Thank You, Chetan",
+      "id": 3
+    },
+    {
+      "postId": 2,
+      "name": "Ganesh Yadav",
+      "email": "ganesh@123",
+      "body": "Nice One",
+      "id": 4
+    },
+    {
+      "postId": 4,
+      "name": "Sumitra Yadav",
+      "email": "sumitra@123",
+      "body": "Nice bird!!!",
+      "id": 5
+    },
+    {
+      "postId": 4,
+      "name": "Ganesh Yadav",
+      "email": "ganesh@123",
+      "body": "Yah it is a nice one",
+      "id": 6
+    },
+    {
+      "postId": 3,
+      "name": "Ganesh Yadav",
+      "email": "ganesh@123",
+      "body": "Just cleaver",
+      "id": 7
     }
   ]
 }

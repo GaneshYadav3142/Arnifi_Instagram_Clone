@@ -1,10 +1,11 @@
 import { COMMENT_FAILURE, COMMENT_REQUEST, GET_COMMENT_SUCCESS, POST_COMMENT_REQUEST,  } from "./actionType"
 import axios from "axios"
 
-export const postComment=(comment)=>(dispatch)=>{
+export const postCommentFunction=(obj)=>(dispatch)=>{
     dispatch({type:COMMENT_REQUEST})
-    axios.post("http://localhost:8080/comments",comment)
+    axios.post("http://localhost:8080/comments",obj)
     .then((res)=>{
+        console.log(res)
        console.log(res.data)
        dispatch({type:POST_COMMENT_REQUEST,payload:res.data})
     })
