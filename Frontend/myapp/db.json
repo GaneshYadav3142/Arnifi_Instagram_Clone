@@ -1,0 +1,28 @@
+{
+  "posts":[
+    {
+      "id": 1,
+      "userId": 1,
+      "image":"https://www.jsonplaceholder.org/jsonplaceholder.webp",
+      "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit"
+      }
+  ],
+
+"users":[
+  {
+    "id":1,
+    "name":"Ganesh Yadav",
+    "email":"ganesh@123",
+    "password":"1234"
+  }
+],
+"comments":[
+  {
+    "postId": 1,
+    "id": 1,
+    "name": "Ganesh Yadav",
+    "email": "ganesh@123",
+    "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
+    }
+]
+}
